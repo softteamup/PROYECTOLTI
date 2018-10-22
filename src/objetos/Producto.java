@@ -10,7 +10,7 @@ public class Producto {
 	private String stockMinimo;
 	private String segmentacion;
 	private double peso;
-	private Tipoestiba tipoestiba;
+	private String tipoestiba ;
 	private int volumen;
 	private double precio;
 	private Date fechaVencimiento;
@@ -18,7 +18,7 @@ public class Producto {
 	private String lote;
 	
 	public Producto (String codigo, String nombre, String stockTotal, String stockMinimo, String segmentacion, double peso,
-						Tipoestiba tipoestiba, int volumen, double precio, Date fechaVencimiento, Date fechaElaborado, String lote){
+						String tipoestiba, int volumen, double precio, Date fechaVencimiento, Date fechaElaborado, String lote){
 		this.codigo = codigo;
 		this.nombre = nombre;
 		this.stockTotal = stockTotal;
@@ -81,11 +81,12 @@ public class Producto {
 		this.peso = peso;
 	}
 
-	public Tipoestiba getTipoestiba() {
+	
+	public String getTipoestiba() {
 		return tipoestiba;
 	}
 
-	public void setTipoestiba(Tipoestiba tipoestiba) {
+	public void setTipoestiba(String tipoestiba) {
 		this.tipoestiba = tipoestiba;
 	}
 
